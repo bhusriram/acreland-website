@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acreland.in - Your Land Solutions Partner</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background for the whole page */
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-4 px-6 md:px-12 rounded-b-xl">
+        <nav class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-green-700">Acreland.in</a>
+
+            <!-- Navigation Links (Hidden on small screens, shown as menu icon) -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-green-600 font-medium transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-green-600 font-medium transition duration-300 ease-in-out">About Us</a>
+                <a href="#services" class="text-gray-700 hover:text-green-600 font-medium transition duration-300 ease-in-out">Services</a>
+                <a href="#contact" class="text-gray-700 hover:text-green-600 font-medium transition duration-300 ease-in-out">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 bg-white rounded-lg shadow-md py-2">
+            <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out">Home</a>
+            <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out">About Us</a>
+            <a href="#services" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out">Services</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md transition duration-300 ease-in-out">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-r from-green-700 to-green-500 text-white py-20 md:py-32 overflow-hidden rounded-b-xl shadow-lg">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                Your Vision. Our Land. Endless Possibilities.
+            </h1>
+            <p class="text-lg md:text-xl mb-10 opacity-90 animate-fade-in-up">
+                Discover prime land opportunities and expert guidance for your next big venture.
+            </p>
+            <a href="#contact" class="bg-white text-green-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Start Your Land Journey
+            </a>
+        </div>
+        <!-- Abstract shapes for visual appeal -->
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div class="absolute w-40 h-40 bg-white opacity-10 rounded-full -top-10 -left-10 animate-pulse-slow"></div>
+            <div class="absolute w-60 h-60 bg-white opacity-10 rounded-full -bottom-20 -right-20 animate-pulse-slow delay-200"></div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 md:py-24 bg-gray-50 rounded-xl mx-4 my-8 shadow-md">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-700 mb-12">Building Futures, Acre by Acre</h2>
+            <div class="flex flex-col lg:flex-row items-center gap-10">
+                <div class="lg:w-1/2">
+                    <img src="https://placehold.co/600x400/e0e0e0/333333?text=Our+Expert+Team" alt="About Us Image" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="lg:w-1/2 text-lg leading-relaxed text-gray-700">
+                    <p class="mb-6">
+                        At Acreland.in, we're more than just land specialists; we're your partners in progress. With deep roots in the real estate landscape, we bring unparalleled expertise to every land transaction and management challenge. Our commitment is to unlock the true potential of your land assets, transforming possibilities into tangible success.
+                    </p>
+                    <p class="mb-6">
+                        Our foundation is built on trust, integrity, and a client-first philosophy. Whether you're seeking to cultivate agricultural dreams, establish a thriving commercial hub, or navigate complex land development, our dedicated team offers bespoke solutions tailored to your unique aspirations.
+                    </p>
+                    <p>
+                        We believe in fostering enduring relationships, ensuring that every step of your land journey is seamless, rewarding, and leads to lasting prosperity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white rounded-xl mx-4 my-8 shadow-md">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-700 mb-12">Your Land, Our Expertise: Comprehensive Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col items-center text-center">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13.5m0-13.5C10.835 5.47 9.247 5 7.5 5S4.165 5.47 3 6.253m9 0c1.165.783 2.753 1.253 4.5 1.253s3.335-.47 4.5-1.253m-9 0V3.75a2.25 2.25 0 10-4.5 0v2.503m9 0V3.75a2.25 2.25 0 114.5 0v2.503M12 12.753v13.5m0-13.5c-1.165.783-2.753 1.253-4.5 1.253S4.165 13.47 3 14.253m9 0c1.165.783 2.753 1.253 4.5 1.253s3.335-.47 4.5-1.253m-9 0V11.25a2.25 2.25 0 10-4.5 0v2.503m9 0V11.25a2.25 2.25 0 114.5 0v2.503"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Strategic Land Acquisition</h3>
+                    <p class="text-gray-600">
+                        Navigate the market with confidence. We identify prime land parcels, ensuring seamless acquisition, legal clarity, and optimal value for your investment.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col items-center text-center">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 002.92 12c0 3.072 1.887 5.765 4.5 7.128.7.323 1.453.595 2.245.807l.215.06a2.002 2.002 0 002.576 0 2.002 2.002 0 01.215-.06c.792-.212 1.545-.484 2.245-.807 2.613-1.363 4.5-4.056 4.5-7.128a12.001 12.001 0 00-3.098-8.996z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Dynamic Land Sales & Marketing</h3>
+                    <p class="text-gray-600">
+                        Maximize your returns. Our innovative marketing strategies and expert negotiation ensure your land sells quickly and profitably.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out flex flex-col items-center text-center">
+                    <div class="text-green-600 mb-4">
+                        <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m-1 4h1m-1 4h1m-1 4h1m-1 4h1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Visionary Land Development Consulting</h3>
+                    <p class="text-gray-600">
+                        Unlock your property's full potential. We provide strategic insights into planning, zoning, and sustainable development for maximum impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-gray-50 rounded-xl mx-4 my-8 shadow-md">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-700 mb-12">Let's Cultivate Your Success</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-xl shadow-lg">
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Your Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200" placeholder="john.doe@example.com" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block text-gray-700 text-sm font-medium mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200" placeholder="Inquiry about land sales">
+                    </div>
+                    <div class="mb-8">
+                        <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="6" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-200 resize-y" placeholder="Tell us more about your land requirements..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-700 transition duration-300 ease-in-out transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8 rounded-t-xl shadow-inner">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-lg mb-4">&copy; 2025 Acreland.in. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300 ease-in-out">Terms of Service</a>
+            </div>
+            <p class="text-sm text-gray-500">Designed with <span class="text-red-500">&hearts;</span> by Your Name/Company</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
